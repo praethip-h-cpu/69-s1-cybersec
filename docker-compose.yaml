@@ -22,4 +22,8 @@ services:
       PGADMIN_DEFAULT_EMAIL: praethip-h@rmutp.ac.th
       PGADMIN_DEFAULT_PASSWORD: 120975922Aa
     volumes:
-      - ./pgadmin:/var/lib/pgadmin
+       - data-pgadmin:/var/lib/pgadmin
+
+    volumes:
+      data-postgres:
+      data-pgadmin:
