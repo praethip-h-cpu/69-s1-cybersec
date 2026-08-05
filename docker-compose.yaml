@@ -23,3 +23,12 @@ services:
       PGADMIN_DEFAULT_PASSWORD: 120975922Aa
     volumes:
       - ./pgadmin:/var/lib/pgadmin
+
+  app:
+    image: prawee/strapi
+    container_name: 69-s1-app
+    depends_on:
+      - db
+    ports:
+      - "9092:1337"
+    restart: unless-stopped
