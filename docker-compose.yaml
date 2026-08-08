@@ -31,4 +31,11 @@ services:
       - db
     ports:
       - "9092:1337"
+    environment:
+      DATABASE_CLIENT: postgres
+      DATABASE_HOST: host.docker.internal
+      DATABASE_PORT: 54321
+      DATABASE_NAME: praethip
+      DATABASE_USERNAME: praethip
+      DATABASE_PASSWORD: 120975922Aa
     restart: unless-stopped
