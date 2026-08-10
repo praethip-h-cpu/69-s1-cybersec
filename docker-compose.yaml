@@ -3,7 +3,7 @@ services:
     image: postgres:16-alpine
     container_name: 69-s1-db
     ports:
-      - "54321:5432"
+      - "54327:5432"
     environment:
       POSTGRES_PASSWORD: 120975922Aa
       POSTGRES_USER: praethip
@@ -21,19 +21,21 @@ services:
     environment:
       PGADMIN_DEFAULT_EMAIL: praethip-h@rmutp.ac.th
       PGADMIN_DEFAULT_PASSWORD: 120975922Aa
+    volumes:
+      - data-pgadmin:/var/lib/pgadmin
 
   app:
     image: prawee/strapi
     container_name: 69-s1-app
-    depends_on:
-      - db
     ports:
       - "9091:1337"
     environment:
       DATABASE_CLIENT: postgres
-      DATABASE_HOST: host.docker.internal
-      DATABASE_PORT: 54321
+      DATABASE_HOST: 69-s1-db
+      DATABASE_PORT: 5432
       DATABASE_NAME: praethip
       DATABASE_USERNAME: praethip
       DATABASE_PASSWORD: 120975922Aa
-    restart: unless-stopped
+
+volumes:
+  data-pgadmin:
