@@ -28,7 +28,7 @@ services:
     depends_on:
       - db
     ports:
-      - "9092:1337"
+      - "9091:1337"
     environment:
       DATABASE_CLIENT: postgres
       DATABASE_HOST: host.docker.internal
