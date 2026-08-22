@@ -28,14 +28,14 @@ services:
     image: prawee/strapi
     container_name: 69-s1-app
     ports:
-      - "9091:1337"
+      - 9091:1337
     environment:
-      DATABASE_CLIENT: postgres
-      DATABASE_HOST: 69-s1-db
-      DATABASE_PORT: 5432
-      DATABASE_NAME: praethip
-      DATABASE_USERNAME: praethip
-      DATABASE_PASSWORD: 120975922Aa
+      - DATABASE_CLIENT=postgres
+      - DATABASE_NAME=praethip
+      - DATABASE_HOST=192.168.1.161
+      - DATABASE_PORT=54327
+      - DATABASE_USERNAME=praethip
+      - DATABASE_PASSWORD=120975922Aa
 
 volumes:
   data-pgadmin:
