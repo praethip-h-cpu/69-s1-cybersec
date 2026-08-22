@@ -38,5 +38,4 @@ services:
       - DATABASE_PASSWORD=120975922Aa
 
 volumes:
-  data-postgres:
   data-pgadmin:
