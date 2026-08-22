@@ -24,7 +24,7 @@ services:
     ports:
       - ${STRAPI_PORT}:1337
     environment:
-      - DATABASE_CLIENT=postgres
+      - DATABASE_CLIENT=${DATABASE_CLIENT}
       - DATABASE_NAME=${POSTGRES_DB}
       - DATABASE_HOST=${POSTGRES_HOST}
       - DATABASE_PORT=${POSTGRES_PORT}
