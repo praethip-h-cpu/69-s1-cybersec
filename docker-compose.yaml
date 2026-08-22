@@ -3,11 +3,11 @@ services:
     image: postgres:16-alpine
     container_name: 69-s1-db
     ports:
-      - "54327:5432"
+      - 54327:5432
     environment:
-      POSTGRES_PASSWORD: 120975922Aa
-      POSTGRES_USER: praethip
-      POSTGRES_DB: praethip
+      - POSTGRES_PASSWORD=120975922Aa
+      - POSTGRES_USER=praethip
+      - POSTGRES_DB=praethip
     volumes:
       - ./data:/var/lib/postgresql/data
 
@@ -17,10 +17,10 @@ services:
     depends_on:
       - db
     ports:
-      - "8081:80"
+      - 8081:80
     environment:
-      PGADMIN_DEFAULT_EMAIL: praethip-h@rmutp.ac.th
-      PGADMIN_DEFAULT_PASSWORD: 120975922Aa
+      - PGADMIN_DEFAULT_EMAIL=praethip-h@rmutp.ac.th
+      - PGADMIN_DEFAULT_PASSWORD=120975922Aa
     volumes:
       - data-pgadmin:/var/lib/pgadmin
 
