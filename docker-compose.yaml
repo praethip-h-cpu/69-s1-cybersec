@@ -3,7 +3,7 @@ services:
     image: postgres:16-alpine
     container_name: 69-s1-db
     ports:
-      - 54327:5432
+      - 54321:5432
     environment:
       - POSTGRES_PASSWORD=120975922Aa
       - POSTGRES_USER=praethip
@@ -33,7 +33,7 @@ services:
       - DATABASE_CLIENT=postgres
       - DATABASE_NAME=praethip
       - DATABASE_HOST=192.168.1.161
-      - DATABASE_PORT=54327
+      - DATABASE_PORT=54321
       - DATABASE_USERNAME=praethip
       - DATABASE_PASSWORD=120975922Aa
 
