@@ -20,7 +20,7 @@ Content-Type: application/json
 
 ## Profile
 GET http://localhost:9091/admin/users/me
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzg3NTgxODgxLCJleHAiOjE3OTAxNzM4ODF9.p1kmddfDlUB5U8ROfISWfnhO2kB1PfYLQRMQHr-wD20
+Authorization: Bearer 
 
 ## Register / Signup
 POST http://localhost:9091/admin/register-admin
