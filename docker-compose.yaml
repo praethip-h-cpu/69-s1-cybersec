@@ -34,7 +34,6 @@ services:
       - DATABASE_PORT=${DATABASE_PORT}
       - DATABASE_USERNAME=${DATABASE_USERNAME}
       - DATABASE_PASSWORD=${DATABASE_PASSWORD}
-      - SMTP_USERNAME=${SMTP_USERNAME}
-
+      
 volumes:
   data-pgadmin:
