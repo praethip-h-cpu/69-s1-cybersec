@@ -36,9 +36,8 @@ POST http://localhost:9091/admin/reset-password
 Content-Type: application/json
 
 {
-    "code": "your-reset-code",
-    "password": "your-new-password",
-    "passwordConfirmation": "your-new-password"
+    "resetPasswordToken": "your-reset-token",
+    "password": "your-new-password"
 }
 
 ### 1.4 Profile
